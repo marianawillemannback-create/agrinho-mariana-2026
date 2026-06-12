@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte - Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1><i class="fas fa-seedling"></i> Agro Forte</h1>
+            <p class="subtitle">Futuro Sustentável</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Soluções Sustentáveis para o Campo</h2>
+            <p>Clique em um tópico para saber mais e encontrar locais próximos</p>
+        </section>
+
+        <section class="topics-grid" id="topicsGrid">
+            <div class="topic-card" data-topic="reciclagem">
+                <i class="fas fa-recycle"></i>
+                <h3>Reciclagem de Embalagens</h3>
+                <p>Agrícolas</p>
+            </div>
+
+            <div class="topic-card" data-topic="compostagem">
+                <i class="fas fa-leaf"></i>
+                <h3>Compostagem</h3>
+                <p>Orgânica</p>
+            </div>
+
+            <div class="topic-card" data-topic="reaproveitamento">
+                <i class="fas fa-sync-alt"></i>
+                <h3>Reaproveitamento</h3>
+                <p>de Materiais</p>
+            </div>
+
+            <div class="topic-card" data-topic="energia">
+                <i class="fas fa-solar-panel"></i>
+                <h3>Energia Limpa</h3>
+                <p>no Campo</p>
+            </div>
+
+            <div class="topic-card" data-topic="agua">
+                <i class="fas fa-water"></i>
+                <h3>Uso Consciente</h3>
+                <p>da Água</p>
+            </div>
+
+            <div class="topic-card" data-topic="agricultura">
+                <i class="fas fa-tractor"></i>
+                <h3>Agricultura</h3>
+                <p>Sustentável</p>
+            </div>
+        </section>
+
+        <section class="content-section" id="contentSection" style="display: none;">
+            <button class="back-btn" id="backBtn">
+                <i class="fas fa-arrow-left"></i> Voltar
+            </button>
+            <div id="topicContent"></div>
+            <div class="map-section">
+                <h3><i class="fas fa-map-marker-alt"></i> Locais Próximos</h3>
+                <div id="locationsList"></div>
+                <div id="map" style="display: none;">
+                    <iframe id="mapFrame" width="100%" height="300" style="border:0;" loading="lazy"></iframe>
+                    <div id="routeInfo"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Agro Forte - Futuro Sustentável. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
